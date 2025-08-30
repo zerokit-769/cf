@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Yumi - Proxy</title>
+    <title>cloudflare - Proxy</title>
     <link
       rel="icon"
       type="image/x-icon"
-      href="https://github.com/user-attachments/assets/b5feabb7-3f20-4028-9436-e3f3307dd2ae"
+      href="https://raw.githubusercontent.com/ziyosen/xproject-vpn/master/Screenshot_20250626-032808.png"
     />
     <meta
       name="viewport"
@@ -38,8 +38,9 @@
         font-family: "Inter", sans-serif;
       }
 
-      body {
-        background-image: url("https://i.postimg.cc/GtkMfsj8/wallhaven-3lv3q6.png");
+      body
+      {
+        /* background-image removed */
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -356,10 +357,49 @@
         border: 1px solid rgba(99, 102, 241, 0.2);
         border-radius: 12px;
       }
-    </style>
+
+    
+  #bg-video {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* supaya tidak ngezoom */
+    background: black;
+    z-index: -1;
+    pointer-events: none;
+  }
+  #unmute-btn {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 9999;
+    display: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.15);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 0.95rem;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+
+</style>
   </head>
 
   <body class="font-sans">
+
+<video id="bg-video"
+       playsinline
+       autoplay
+       loop
+       preload="auto"
+       crossorigin="anonymous"
+       src="https://raw.githubusercontent.com/ziy769/testt/main/VID_20250826_194454_747.mp4">
+</video>
+<button id="unmute-btn">Nyalakan Suara</button>
+
     <div class="container mx-auto px-2 sm:px-4 py-4 sm:py-6 max-w-xl">
       <div class="card overflow-hidden">
         <!-- Header -->
@@ -371,7 +411,7 @@
             <h1
               class="text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-emerald-400"
             >
-              Yumi-Proxy
+              Proxy Database
             </h1>
           </div>
         </div>
@@ -411,7 +451,7 @@
                   id="proxy-url"
                   class="flex-1 px-4 py-2.5 input rounded-l-lg text-sm"
                   placeholder="Enter custom proxy list URL"
-                  value="https://raw.githubusercontent.com/Mayumiwandi/Emilia/refs/heads/main/Data/alive.txt"
+                  value="https://gh-proxy.com/https://raw.githubusercontent.com/FoolVPN-ID/Nautica/refs/heads/main/proxyList.txt"
                 />
                 <button
                   id="load-custom-url"
@@ -809,7 +849,7 @@
                           name="wildcard"
                         />
                         <label for="vmess-wildcard"
-                          >Gunakan Wildcard (bug.domain.com)</label
+                          >Wildcard (gunakan domain balckwolf.dpdns.org)</label
                         >
                       </div>
                     </div>
@@ -949,7 +989,7 @@
                           name="wildcard"
                         />
                         <label for="vless-wildcard"
-                          >Gunakan Wildcard (bug.domain.com)</label
+                          >Wildcard (gunakan domain balckwolf.dpdns.org)</label
                         >
                       </div>
                     </div>
@@ -1089,7 +1129,7 @@
                           name="wildcard"
                         />
                         <label for="trojan-wildcard"
-                          >Gunakan Wildcard (bug.domain.com)</label
+                          >Wildcard (gunakan domain balckwolf.dpdns.org)</label
                         >
                       </div>
                     </div>
@@ -1220,7 +1260,7 @@
                           name="wildcard"
                         />
                         <label for="ss-wildcard"
-                          >Gunakan Wildcard (bug.domain.com)</label
+                          >Wildcard (gunakan domain balckwolf.dpdns.org)</label
                         >
                       </div>
                     </div>
@@ -1324,34 +1364,15 @@
               </div>
               <span
                 class="text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-emerald-400"
-                >Yumi Proxy</span
+                >Benxx Project</span
               >
             </div>
-
+            
             <div class="flex gap-4">
-              <a
-                href="https://github.com/mayumiwandi"
-                class="w-8 h-8 rounded-full bg-slate-700/50 flex items-center justify-center text-gray-400 hover:text-indigo-400 hover:bg-slate-700 transition-all"
-              >
-                <i class="fab fa-github"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/mayumi_wandi"
-                class="w-8 h-8 rounded-full bg-slate-700/50 flex items-center justify-center text-gray-400 hover:text-indigo-400 hover:bg-slate-700 transition-all"
-              >
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a
-                href="https://www.tiktok.com/@python_yumi"
-                class="w-8 h-8 rounded-full bg-slate-700/50 flex items-center justify-center text-gray-400 hover:text-indigo-400 hover:bg-slate-700 transition-all"
-              >
-                <i class="fa-brands fa-tiktok"></i>
-              </a>
-              <a
-                href="https://t.me/Yumi_yui"
-                class="w-8 h-8 rounded-full bg-slate-700/50 flex items-center justify-center text-gray-400 hover:text-indigo-400 hover:bg-slate-700 transition-all"
-              >
-                <i class="fab fa-telegram"></i>
+      <span><a href="https://balckwolf.dpdns.org" target="_blank" rel="noopener noreferrer" style="font-family: 'Rajdhani', sans-serif;"><img src="https://bmkg.xyz/img/linksub.png" alt="menu" width="30"></a></span>
+             <span><a href="https://t.me/Bleszh" target="_blank" rel="noopener noreferrer" style="font-family: 'Rajdhani', sans-serif;"><img src="https://bmkg.xyz/img/tele.png" alt="menu" width="30"></a></span>
+                    <span><a href="https://www.benxx.dpdns.org" target="_self" rel="noopener noreferrer">
+    <img src="https://bmkg.xyz/img/home.png" alt="menu" width="30"></a></span>
               </a>
             </div>
           </div>
@@ -1361,7 +1382,7 @@
           ></div>
 
           <div class="text-center text-gray-500 text-xs">
-            <p>© 2025 Yumi Proxy | Secure Connection Technology</p>
+            <p>© 2025 Benxx project | Secure Connection Technology</p>
             <p class="mt-1 flex items-center justify-center">
               Dibuat dengan
               <i class="fas fa-heart text-rose-500 mx-1"></i>
@@ -1384,7 +1405,7 @@
 
     <div id="donation-button" class="fixed bottom-6 right-6 z-[1000]">
       <a
-        href="https://trakteer.id/mayumiwandi/tip"
+        href="https://nyawer.co/Benxx"
         target="_blank"
         class="w-12 h-12 rounded-full donation-btn flex items-center justify-center shadow-lg"
       >
@@ -1392,18 +1413,13 @@
       </a>
     </div>
 
-    <p class="text-white-400 text-xs text-center">
-      Klik tombol di atas untuk memberikan dukungan 💖
-    </p>
-
     <script>
       // Global variables
       let proxyList = [];
       let filteredProxyList = [];
       let selectedProxy = null;
-      const defaultProxyUrl =
-        "https://raw.githubusercontent.com/Mayumiwandi/Emilia/refs/heads/main/Data/alive.txt";
-      const serverDomains = ["changli.fapowi.workers.dev"];
+      const defaultProxyUrl = "https://raw.githubusercontent.com/ziy769/testt/refs/heads/main/ProxyList%20(1).txt";
+      const serverDomains = ["ouzora.dpdns.org", "balckwolf.dpdns.org"];
       let selectedServerDomain = serverDomains[0]; // Default to first domain
       const defaultUUID = "aacac2d2-cac8-442a-9f2c-4e4f807065f5";
       const itemsPerPage = 10;
@@ -2162,34 +2178,33 @@
         }-${endIndex} of ${filteredProxyList.length} proxies`;
       }
 
-      // Function to check proxy status in the list
-      function checkProxyStatusInList(proxy, statusBadge) {
-        //Api Check Healt
-        const statusURL = `https://yumiwolker.mayumiyui.workers.dev/check?target=${proxy.ip}:${proxy.port}`;
+  // Function to check proxy status in the list
+function checkProxyStatusInList(proxy, statusBadge) {
+  const statusURL = `https://afrcloud.dpdns.org/${proxy.ip}:${proxy.port}`
 
-        fetch(statusURL)
-          .then((response) => response.json())
-          .then((data) => {
-            if (data.proxyip === true) {
-              statusBadge.className =
-                "inline-block w-3 h-3 rounded-full bg-emerald-500 ml-2";
-              statusBadge.innerHTML = "";
-              statusBadge.title = "Active";
-            } else {
-              statusBadge.className =
-                "inline-block w-3 h-3 rounded-full bg-rose-500 ml-2";
-              statusBadge.innerHTML = "";
-              statusBadge.title = "Dead";
-            }
-          })
-          .catch((error) => {
-            statusBadge.className =
-              "inline-block w-3 h-3 rounded-full bg-amber-500 ml-2";
-            statusBadge.innerHTML = "";
-            statusBadge.title = "Unknown";
-            console.error("Fetch error:", error);
-          });
+  fetch(statusURL)
+    .then((response) => response.json())
+    .then((data) => {
+      // Handle the new format where data is an array
+      const proxyData = Array.isArray(data) ? data[0] : data
+
+      if (proxyData && proxyData.proxyip === true) {
+        statusBadge.className = "inline-block w-3 h-3 rounded-full bg-emerald-500 ml-2"
+        statusBadge.innerHTML = ""
+        statusBadge.title = "Aktif"
+      } else {
+        statusBadge.className = "inline-block w-3 h-3 rounded-full bg-rose-500 ml-2"
+        statusBadge.innerHTML = ""
+        statusBadge.title = "Mati"
       }
+    })
+    .catch((error) => {
+      statusBadge.className = "inline-block w-3 h-3 rounded-full bg-amber-500 ml-2"
+      statusBadge.innerHTML = ""
+      statusBadge.title = "Tidak diketahui"
+      console.error("Fetch error:", error)
+    })
+}
 
       // Function to render pagination controls
       function renderPagination(totalPages) {
@@ -2349,49 +2364,51 @@
         checkProxyStatus(selectedProxy);
       }
 
-      // Function to check proxy status in the account creation section
-      function checkProxyStatus(proxy) {
-        const startTime = performance.now();
-        const statusURL = `https://yumiwolker.mayumiyui.workers.dev/check?target=${proxy.ip}:${proxy.port}`;
-        const statusContainer = document.getElementById(
-          "proxy-status-container"
-        );
-        const statusLoading = document.getElementById("proxy-status-loading");
-        const statusActive = document.getElementById("proxy-status-active");
-        const statusDead = document.getElementById("proxy-status-dead");
-        const statusUnknown = document.getElementById("proxy-status-unknown");
-        const latencyElement = document.getElementById("proxy-latency");
+// Function to check proxy status in the account creation section
+function checkProxyStatus(proxy) {
+  const startTime = performance.now()
+  const statusURL = `https://afrcloud.dpdns.org/${proxy.ip}:${proxy.port}`
+  const statusContainer = document.getElementById("proxy-status-container")
+  const statusLoading = document.getElementById("proxy-status-loading")
+  const statusActive = document.getElementById("proxy-status-active")
+  const statusDead = document.getElementById("proxy-status-dead")
+  const statusUnknown = document.getElementById("proxy-status-unknown")
+  const latencyElement = document.getElementById("proxy-latency")
 
-        // Show status container and loading state
-        statusContainer.classList.remove("hidden");
-        statusLoading.classList.remove("hidden");
-        statusActive.classList.add("hidden");
-        statusDead.classList.add("hidden");
-        statusUnknown.classList.add("hidden");
+  // Show status container and loading state
+  statusContainer.classList.remove("hidden")
+  statusLoading.classList.remove("hidden")
+  statusActive.classList.add("hidden")
+  statusDead.classList.add("hidden")
+  statusUnknown.classList.add("hidden")
 
-        fetch(statusURL)
-          .then((response) => response.json())
-          .then((data) => {
-            const endTime = performance.now();
-            let latency = Math.floor(endTime - startTime);
+  fetch(statusURL)
+    .then((response) => response.json())
+    .then((data) => {
+      const endTime = performance.now()
+      const latency = Math.floor(endTime - startTime)
 
-            // Hide loading state
-            statusLoading.classList.add("hidden");
+      // Hide loading state
+      statusLoading.classList.add("hidden")
 
-            if (data.proxyip === true) {
-              statusActive.classList.remove("hidden");
-              latencyElement.textContent = `${latency}ms`;
-            } else {
-              statusDead.classList.remove("hidden");
-            }
-          })
-          .catch((error) => {
-            // Hide loading state
-            statusLoading.classList.add("hidden");
-            statusUnknown.classList.remove("hidden");
-            console.error("Fetch error:", error);
-          });
+      // Handle the new format where data is an array
+      const proxyData = Array.isArray(data) ? data[0] : data
+
+      if (proxyData && proxyData.proxyip === true) {
+        statusActive.classList.remove("hidden")
+        latencyElement.textContent = `${latency}ms`
+      } else {
+        statusDead.classList.remove("hidden")
       }
+    })
+    .catch((error) => {
+      // Hide loading state
+      statusLoading.classList.add("hidden")
+      statusUnknown.classList.remove("hidden")
+      console.error("Fetch error:", error)
+    })
+}
+
 
       // Function to show proxy list section
       function showProxyListSection() {
@@ -2443,5 +2460,38 @@
           });
       }
     </script>
-  </body>
+  
+<script>
+(function(){
+  const video = document.getElementById('bg-video');
+  const btn = document.getElementById('unmute-btn');
+  video.volume = 0.6;
+
+  function tryAutoplayWithSound() {
+    video.play().then(() => {
+      btn.style.display = 'none';
+    }).catch(() => {
+      video.muted = true;
+      video.play();
+      btn.style.display = 'block';
+    });
+  }
+
+  btn.addEventListener('click', function () {
+    video.muted = false;
+    video.volume = 0.7;
+    video.play().then(() => {
+      btn.style.display = 'none';
+    });
+  });
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', tryAutoplayWithSound);
+  } else {
+    tryAutoplayWithSound();
+  }
+})();
+</script>
+
+</body>
 </html>
