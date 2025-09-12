@@ -2,10 +2,6 @@ name = "changli"
 main = "build/worker/shim.mjs"
 compatibility_date = "2024-05-23"
 minify = true
-routes = [
-
-  { pattern = "blackshadow.dpdns.org", custom_domain = true },
-]
 
 account_id = "ca6ca42842b3a4580f27f97f61d4692b"
 workers_dev = true
